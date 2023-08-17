@@ -1,0 +1,277 @@
+.navbar{
+    background-color: white;
+    border: solid #001D51 3px;
+}
+
+.cycle{
+    background-color: #7371FC;
+    border: black solid 2px;
+    text-align: center;
+}
+
+.title{
+    font-size: 30px;
+    font-family: Impact;
+    color: white;
+    text-decoration: none;
+}
+
+.appname{
+    margin: auto;
+    font-family: "Cooper Black";
+    color: black;
+    text-decoration: none;
+    font-size: 34px;
+}
+
+.nav{
+    color: white;
+    margin: 20px auto;
+    font-size: 50px;
+    text-decoration: none;
+    font-family: Impact;
+}
+
+.input{
+    background-image: url("flowers.jpg");
+}
+
+.login{
+    text-align: center;
+    padding: 20px;
+    font-family: monospace;
+    background-color: white;
+    border-radius: 5px;
+    border: solid #7371FC 4px;
+    margin: auto 300px;
+}
+
+.reg{
+    padding: 20px;
+    font-family: monospace;
+    background-color: #FFFDE3;
+    border-radius: 5px;
+    border: solid #7371FC 4px;
+    margin: auto 300px;
+}
+
+.login-btn{
+    background-color: #7371FC;
+    color: white;
+    border: black solid 3px;
+    border-radius: 10px;
+    padding: 5px 20px;
+    text-decoration: none;
+}
+
+.login-btn:hover{
+    background-color: white;
+    color: black;
+    border: black solid 3px;
+    border-radius: 10px;
+    padding: 5px 20px;
+    text-decoration: none;
+}
+
+.login-btn-div{
+    text-align: center;
+}
+
+.prompt{
+    font-family: padding;
+    font-weight: bold;
+    font-size: 24px;
+}
+
+.prompt1{
+    font-family: monospace;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+.form{
+    background-color: #E7D9FF;
+    padding: 20px;
+    border: black solid 2px;
+}
+
+.signup{
+    background-color: white;
+    border-radius: 5px;
+    padding: 5px 10px;
+}
+
+.signup:hover{
+    background-color: #FEF129;
+    border-radius: 5px;
+    padding: 5px 10px;
+}
+
+.login-reg{
+    font-size: 12px;
+    text-align: center;
+    padding: 5px 10px;
+    margin: 20px;
+    font-family: Verdana;
+    color: black;
+    background-color: #FFFDE3;
+    border-radius: 10px;
+    border: solid black 2px;
+    text-decoration: none;
+}
+
+.login-reg:hover{
+    background-color: white;
+    border-radius: 10px;
+    border: solid black 2px;
+    text-decoration: none;
+}
+
+.sidebar {
+height: 100%;
+width: 400px;
+position: absolute;
+left: 0;
+top: 0;
+padding-top: 30px;
+background-image: url("pastel.jpg");
+    margin: 50px 0px;
+}
+
+.sidebar1 {
+height: 100%;
+width: 400px;
+position: absolute;
+right: 0;
+top: 0;
+padding-top: 40px;
+background-image: url("pastel.jpg");
+    margin: 50px 0px;
+}
+
+.sidebar div {
+padding: 8px;
+display: block;
+}
+
+.body-text {
+margin-left: 450px;
+font-size: 18px;
+}
+
+.form-group{
+    text-align: center;
+    padding: 20px;
+    font-weight: bold;
+    background-color: white;
+}
+
+.submit{
+    text-align: center;
+}
+
+.btn-sub{
+    background-color: #F2D4FF;
+    margin: 20px;
+    border-radius: 10px;
+}
+
+.btn-sub:hover{
+    background-color: #58A3FF;
+    margin: 20px;
+    border-radius: 10px;
+}
+
+.cycle-input{
+    text-align: center;
+    font-family: monospace;
+    font-weight: bold;
+    font-size: 24px;
+    border: black solid 1px;
+    border-radius: 10px;
+    background-color: white;
+}
+
+.quote{
+    color: black;
+    font-size: 18px;
+    background-color: white;
+    border: black solid 2px;
+    text-align: center;
+    margin: 5px 20px;
+    font-family: cursive;
+    border-radius: 10px
+}
+
+.pic{
+    width:200px;
+    height: 200px;
+    margin: 0px 60px;
+}
+
+.pic1{
+    width:300px;
+    height: 270px;
+    margin: 0px 55px;
+    border: double black 4px;
+    border-radius: 10px;
+}
+
+.pic2{
+    width:150px;
+    height: 100px;
+    margin: 0px 250px;
+    text-align: right;
+}
+
+.pic4{
+    width:150px;
+    height: 100px;
+    margin: 0px 80px;
+}
+
+.pic3{
+    width:100px;
+    height: 50px;
+}
+
+.animal{
+    text-align: left;
+    margin: 0px 500px;
+}
+
+.cycle-bod{
+    background-color: #FFEFFF;
+}
+
+.col-md-7{
+    background-image: url("flowers.jpg");
+    margin: 0px 0px;
+    border: black 2px solid;
+    border-radius: 20px;
+}
+
+.nav-item{
+    background-color: white;
+    border: black 1px solid;
+    padding: 2px 10px;
+    border-radius: 5px;
+    color: black;
+    text-decoration: none;
+    float: right;
+    margin: 5px;
+}
+
+.nav-item:hover{
+    background-color: #FFEFCD;
+    border: black 1px solid;
+    padding: 2px 10px;
+    border-radius: 5px;
+    color: black;
+    text-decoration: none;
+    display: inline-block;
+}
+
+.logout {
+    text-align: center;
+}

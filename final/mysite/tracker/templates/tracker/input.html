@@ -1,0 +1,82 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Cycle Tracker</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="/static/tracker/style.css">
+</head>
+<body class="cycle-bod">
+
+<nav class="cycle">
+    <div>
+        <a href="#" class="title">CYCLE&ensp;TRACKER</a>
+        <a href="/history" class="nav-item">History</a>
+        {% if user.is_authenticated %}
+        <a href="{% url 'logout' %}" class="nav-item">Logout</a>
+        {% else %}
+        <a href="{% url 'login' %}" class="nav-item">Login</a>
+        {% endif %}
+    </div>
+</nav>
+<div class="animal">
+        <img class="pic3" src="https://media3.giphy.com/media/ue7Oh8WdVspgI/200w.webp?cid=ecf05e47knuzg8ogwdzqzvuncnvyw4fafwjwmrye1hf3chy6&ep=v1_stickers_search&rid=200w.webp&ct=s">
+</div>
+<div class="sidebar">
+<div class="quote">When you focus on the good, the good gets better.</div>
+<div>
+    <img class="pic" src="https://i.pinimg.com/originals/57/3c/da/573cdaf5205bebaac51ca29273dd5514.gif">
+</div>
+<div class="quote">What a year this week has been.</div>
+    <div>
+    <img class="pic1" src="https://i.pinimg.com/564x/16/b8/54/16b854ebff36bf2bf20ddddaffd154fd.jpg">
+</div>
+</div>
+
+<div class="sidebar1">
+<div>
+    <img class="pic4" src="https://media3.giphy.com/media/j31GvPjFaHgmZJgkn6/giphy.gif?cid=ecf05e47ky5awn25zo70wqoxsf3egz89p6ij9bi73a5bscn5&ep=v1_stickers_search&rid=giphy.gif&ct=s">
+</div>
+<div class="quote">You're doing your best, and I am proud of you.</div>
+
+<div>
+    <img class="pic2" src="https://i.gifer.com/2iFb.gif">
+</div>
+    <div>
+    <img class="pic1" src="https://i.pinimg.com/564x/3f/b0/ec/3fb0ec8185a3b92c2a89a35ca1ee69e3.jpg">
+</div>
+</div>
+
+<div class="body-text">
+<div class="container">
+    <div class="row">
+        <div class="col-md-7">
+            <form method="POST">
+                {% csrf_token %}
+                <br>
+                <p class="cycle-input"> Input Cycle dates</p>
+                <div class="form-group">
+                    <label for="">Start Date</label>
+                    <input type="date" class="form-control" id="start_date" name="start_date">
+                    <br>
+                    <label for="">End Date</label>
+                    <input type="date" class="form-control" id="end_date" name="end_date">
+                    <br>
+                    <label for="">Notes</label>
+                    <textarea class="form-control" id="notes" name="notes"></textarea>
+                </div>
+                <div class="submit">
+              <button type="submit" class="btn-sub">Submit</button>
+              </div>
+            </form>
+        </div>
+    </div>
+</div>
+</div>
+
+</body>
+</html>
